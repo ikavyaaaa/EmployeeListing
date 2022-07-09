@@ -110,7 +110,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 //Saving data to coredata
                 try self.manageObjectContext!.save()
             }catch{
-                print("bidPeriod saving error", error.localizedDescription)
+                print("Data saving error", error.localizedDescription)
             }
             DispatchQueue.main.async {
                 self.fetchCoreData()
